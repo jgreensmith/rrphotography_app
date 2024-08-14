@@ -1,0 +1,35 @@
+{
+  "name": "rrphotography-next",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^6.6.0",
+    "@fortawesome/free-brands-svg-icons": "^6.6.0",
+    "@fortawesome/free-solid-svg-icons": "^6.6.0",
+    "@fortawesome/react-fontawesome": "^0.2.2",
+    "@sanity/block-content-to-react": "^3.0.0",
+    "@sanity/client": "^6.21.3",
+    "@sanity/image-url": "^1.0.2",
+    "@testing-library/jest-dom": "^6.4.8",
+    "@testing-library/react": "^16.0.0",
+    "@testing-library/user-event": "^14.5.2",
+    "next": "14.2.5",
+    "next-sanity": "^9.4.5",
+    "next-sanity-image": "^6.1.1",
+    "react": "18.3.1",
+    "react-dom": "18.3.1",
+    "react-responsive-carousel": "^3.2.23",
+    "sass": "^1.77.8",
+    "simple-react-lightbox": "^3.6.8"
+  },
+  "devDependencies": {
+    "eslint": "9.9.0",
+    "eslint-config-next": "14.2.5"
+  }
+}

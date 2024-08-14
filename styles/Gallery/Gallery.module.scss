@@ -1,0 +1,46 @@
+.object-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.img-fit {
+  width: 300px;
+  border-radius: 50%;
+}
+
+@import "../variables";
+
+.home-header {
+  color: #5f5f5f;
+  font-size: 2rem;
+  text-align: center;
+  font-weight: 300;
+  margin: auto;
+  padding-bottom: 15px;
+}
+.blurb {
+  color: #5f5f5f;
+  line-height: 1rem;
+}
+.decoration {
+  text-decoration: none;
+}
+.object-wrapper {
+  padding: 40px;
+  transition: 0.2s ease-in-out;
+  &:hover {
+    cursor: pointer;
+    transform: scale(1.02);
+  }
+}
+@media screen and (max-width: 760px) {
+  .img-fit {
+    width: 180px;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .object-wrapper {
+    padding: 40px 0;
+  }
+}

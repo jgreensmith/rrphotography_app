@@ -1,0 +1,86 @@
+@import "../variables";
+
+.btn-card {
+  width: 50%;
+  padding-bottom: 30px;
+}
+.line {
+  width: 100%;
+  height: 1px;
+  background-color: darkgrey;
+}
+.btn-container {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.btn-info-wrapper {
+  //padding: 20px 60px;
+  display: flex;
+  justify-content: center;
+  width: 90%;
+  margin: auto;
+}
+.btn-text {
+  font-weight: 300;
+  font-size: 1.5rem;
+  text-align: center;
+}
+.small-text {
+  font-size: 1rem;
+}
+.btn-wrapper {
+  //padding: 26px 40px 14px;
+  margin: auto;
+  display: block;
+}
+.top-pad {
+  padding-top: 28px;
+}
+.form-center {
+  display: flex;
+  justify-content: center;
+}
+.etsy-btn {
+  display: block;
+  width: 90%;
+  background-color: #f1641e86;
+  box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2);
+  padding: 10px 40px;
+  font-size: 1.5rem;
+  font-weight: 400;
+  border: solid 3px #fff;
+  box-sizing: border-box;
+  color: #fff;
+  &:hover {
+    color: #f1641e;
+    background-color: #fff;
+    border: solid 3px #f1641e;
+    cursor: pointer;
+  }
+}
+.made-btn {
+  display: block;
+  width: 90%;
+  background-color: rgba(128, 0, 128, 0.37);
+  box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2);
+  padding: 10px 40px;
+  font-size: 1.5rem;
+  font-weight: 400;
+  border: solid 3px #fff;
+  box-sizing: border-box;
+  color: #fff;
+  &:hover {
+    color: rgba(128, 0, 128, 0.568);
+    background-color: #fff;
+    border: solid 3px rgba(128, 0, 128, 0.568);
+    cursor: pointer;
+  }
+}
+@media screen and (max-width: 796px) {
+  .btn-card {
+    width: 100%;
+  }
+}

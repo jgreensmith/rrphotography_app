@@ -1,0 +1,37 @@
+@import "variables";
+
+.about-container {
+  display: flex;
+}
+.about-info-wrapper {
+  text-align: left;
+  margin-right: 20px;
+  margin-right: 20px;
+}
+.profile-wrapper {
+  display: block;
+}
+
+.profile-photo-wrapper {
+  padding: 40px 20px;
+}
+// img.temp-img-size {
+//     height: 400px;
+// }
+@media (max-width: 800px) {
+  .about-container {
+    display: flex;
+    flex-direction: column;
+  }
+  .profile-photo-wrapper {
+    order: 1;
+  }
+  .about-info-wrapper {
+    order: 2;
+    text-align: center;
+  }
+  img.temp-img-size {
+    max-width: 85%;
+    height: auto;
+  }
+}

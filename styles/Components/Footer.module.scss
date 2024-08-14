@@ -1,0 +1,46 @@
+@import "../variables";
+
+.footer {
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  height: 2.5rem;
+  margin-top: 50px;
+}
+.footer-container {
+  background-color: #b5b5b5;
+  display: flex;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 15px;
+}
+
+.footer-object-wrapper {
+  padding: 0 20px;
+  margin: auto;
+  display: flex;
+  justify-content: space-evenly;
+  width: 200px;
+  &.sm {
+    width: 100%;
+  }
+}
+.i-icon {
+  color: #fff;
+  &:hover {
+    color: purple;
+    cursor: pointer;
+  }
+}
+.e-icon {
+  color: #fff;
+  &:hover {
+    color: orange;
+    cursor: pointer;
+  }
+}
+.copyright {
+  color: black;
+}

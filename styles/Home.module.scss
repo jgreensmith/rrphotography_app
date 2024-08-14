@@ -1,0 +1,57 @@
+@import "variables";
+
+.carousel-container {
+  width: 80%;
+  margin: 0 auto;
+}
+.btn-padding {
+  padding-top: 30px;
+}
+.object-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.img-fit {
+  width: 300px;
+  border-radius: 50%;
+}
+.home-header {
+  color: #5f5f5f;
+  font-size: 2rem;
+  text-align: center;
+  font-weight: 300;
+  margin: auto;
+  padding-bottom: 15px;
+}
+.blurb {
+  color: #5f5f5f;
+  line-height: 1rem;
+}
+.decoration {
+  text-decoration: none;
+}
+.object-wrapper {
+  padding: 40px;
+  transition: 0.2s ease-in-out;
+  &:hover {
+    cursor: pointer;
+    transform: scale(1.02);
+  }
+}
+@media screen and (max-width: 760px) {
+  .img-fit {
+    width: 180px;
+  }
+}
+@media screen and (max-width: 760px) {
+  .carousel-container {
+    width: 100%;
+    margin: 0 auto;
+  }
+}
+@media screen and (max-width: 360px) {
+  .object-wrapper {
+    padding: 40px 0;
+  }
+}
