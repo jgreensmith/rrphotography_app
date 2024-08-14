@@ -1,11 +1,11 @@
-import { sanityClient, urlFor } from "../sanity"
+// import { sanityClient, urlFor } from "../sanity"
 import Head from 'next/head';
 import { SRLWrapper } from 'simple-react-lightbox';
 
 import styles from '../styles/Gallery/BlackWhite.module.scss';
 
-const BlackWhite = ({ imageData }) => {
-    console.log(imageData)
+const BlackWhite = () => {
+    const imageData = []
     
     return (
         <>
@@ -23,7 +23,7 @@ const BlackWhite = ({ imageData }) => {
                 <h1 className={`${styles["main-title"]} ${styles["heading"]}`}>Black and White Photography</h1>
                 
                 <div className={styles['gallery-container']}>
-                    {imageData.map((blackwhite, index) => {
+                    {/* {imageData.map((blackwhite, index) => {
                         return(
                           <SRLWrapper>
                             <div className={styles['gallery-square']} key={index}>
@@ -37,7 +37,7 @@ const BlackWhite = ({ imageData }) => {
                             </div>
                           </SRLWrapper>
                         )
-                    })} 
+                    })}  */}
                 </div>
             </div>
           </section> 
@@ -46,23 +46,23 @@ const BlackWhite = ({ imageData }) => {
     )
 }
 
-export const getServerSideProps = async () => {
-    const query = '*[ _type == "blackwhite"]'
-    const imageData = await sanityClient.fetch(query)
+// export const getServerSideProps = async () => {
+//     const query = '*[ _type == "blackwhite"]'
+//     const imageData = await sanityClient.fetch(query)
   
-    if (!imageData.length) {
-      return {
-        props: {
-          imageData: [],
-        },
-      }
-    } else {
-      return {
-        props: {
-          imageData,
-        },
-      }
-    }
-  }
+//     if (!imageData.length) {
+//       return {
+//         props: {
+//           imageData: [],
+//         },
+//       }
+//     } else {
+//       return {
+//         props: {
+//           imageData,
+//         },
+//       }
+//     }
+//   }
 
 export default BlackWhite;

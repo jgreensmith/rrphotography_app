@@ -39,7 +39,7 @@ export default function Contact() {
                     </div>
                     <div className={styles.line}></div>
                     <div className={styles['form-wrapper']}>
-                        <form className={styles['contact-form']} onSubmit={sendEmail}>
+                        {/* <form className={styles['contact-form']} onSubmit={}>
                             <input className={styles['form-item']} type="hidden" name="contact_number" />
                             <label className={styles['form-item']}>Name</label>
                             <input className={styles['form-item']} type="text" name="user_name" />
@@ -50,7 +50,7 @@ export default function Contact() {
                             <div className={styles['button-wrapper']}>
                                 <input className={styles['form-button']} type="submit" value="Send" />
                             </div>
-                        </form>
+                        </form> */}
                     </div>
                 </div>
             </div>

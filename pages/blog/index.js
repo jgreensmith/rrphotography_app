@@ -1,10 +1,11 @@
-import { sanityClient, urlFor } from "../../sanity"
+//import { sanityClient, urlFor } from "../../sanity"
 import Link from "next/link"
 import Head from 'next/head';
 
 import styles from '../../styles/Posts.module.scss';
 
-const Blog = ({ posts }) => {
+const Blog = () => {
+    const posts = []
 
     return (
         <>
@@ -27,7 +28,7 @@ const Blog = ({ posts }) => {
                             {posts.map((post, index) => (
                                 <Link href={`/blog/${post.slug.current}`} >
                                     <div key={index} className={styles.card}>
-                                        <img src={urlFor(post.mainImage).size(200, 200).quality(90).fit("min").url()} />
+                                        {/* <img src={urlFor(post.mainImage).size(200, 200).quality(90).fit("min").url()} /> */}
                                         <div className={styles.details}>
                                             <h2>{post.title}</h2>
                                             <p className={styles.date}>
@@ -57,24 +58,24 @@ const Blog = ({ posts }) => {
     )
 }
 
-export const getServerSideProps = async () => {
-    const query = '*[ _type == "post" ]'
-    const posts = await sanityClient.fetch(query)
+// export const getServerSideProps = async () => {
+//     const query = '*[ _type == "post" ]'
+//     const posts = await sanityClient.fetch(query)
 
-    if (!posts.length) {
-        return {
-            props: {
-                posts: [],
-            },
-        }
-    } else {
-        return {
-            props: {
-                posts,
-            },
-        }
-    }
-}
+//     if (!posts.length) {
+//         return {
+//             props: {
+//                 posts: [],
+//             },
+//         }
+//     } else {
+//         return {
+//             props: {
+//                 posts,
+//             },
+//         }
+//     }
+// }
 
 
 export default Blog

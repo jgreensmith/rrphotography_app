@@ -1,12 +1,11 @@
-import { sanityClient, urlFor } from "../sanity"
+// import { sanityClient, urlFor } from "../sanity"
 import { SRLWrapper } from 'simple-react-lightbox';
 import Head from 'next/head';
 
 import styles from '../styles/Gallery/Cyanotype.module.scss';
 
-const Cyanotype = ({ imageData }) => {
-    console.log(imageData)
-    
+const Cyanotype = () => {
+  const imageData = []    
     return (
         <>
           <Head>
@@ -23,7 +22,7 @@ const Cyanotype = ({ imageData }) => {
                 <h1 className={`${styles["main-title"]} ${styles["heading"]}`}>Cyanotype Photography</h1>
                 
                 <div className={styles['gallery-container']}>
-                    {imageData.map((cyanotype, index) => {
+                    {/* {imageData.map((cyanotype, index) => {
                         return(
                           <SRLWrapper>
                             <div className={styles['gallery-square']} key={index}>
@@ -37,7 +36,7 @@ const Cyanotype = ({ imageData }) => {
                             </div>
                           </SRLWrapper>
                         )
-                    })} 
+                    })}  */}
                 </div>
             </div>
           </section> 

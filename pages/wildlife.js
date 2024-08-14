@@ -1,12 +1,11 @@
-import { sanityClient, urlFor } from "../sanity"
+// import { sanityClient, urlFor } from "../sanity"
 import { SRLWrapper } from 'simple-react-lightbox';
 import Head from 'next/head';
 
 import styles from '../styles/Gallery/Wildlife.module.scss';
 
-const Wildlife = ({ imageData }) => {
-    console.log(imageData)
-    
+const Wildlife = () => {
+  const imageData = []    
     return (
         <>
           <Head>
@@ -23,7 +22,7 @@ const Wildlife = ({ imageData }) => {
                 <h1 className={`${styles["main-title"]} ${styles["heading"]}`}>Wildlife Photography</h1>
                 
                 <div className={styles['gallery-container']}>
-                    {imageData.map((wildlife, index) => {
+                    {/* {imageData.map((wildlife, index) => {
                         return(
                           <SRLWrapper>
                             <div className={styles['gallery-square']} key={index}>
@@ -37,7 +36,7 @@ const Wildlife = ({ imageData }) => {
                             </div>
                           </SRLWrapper>
                         )
-                    })} 
+                    })}  */}
                 </div>
             </div>
            
