@@ -48,17 +48,17 @@ function Navbar() {
                 </div>
                 <ul className={click ? `${styles["nav-menu"]} ${styles["active"]}` : `${styles["nav-menu"]}`}>
                     <li className={styles['nav-item']}>
-                        <Link href="/">
+                        <Link href="/" legacyBehavior>
                             <a className={styles['nav-link']} onClick={closeMobileMenu}>Home</a>
                         </Link>
                     </li>
                     <li className={styles['nav-item']}>
-                        <Link href="/about">
+                        <Link href="/about" legacyBehavior>
                             <a className={styles['nav-link']} onClick={closeMobileMenu}>About</a>
                         </Link>
                     </li>
                     <li className={styles['nav-item']}>
-                        <Link href="/blog">
+                        <Link href="/blog" legacyBehavior>
                             <a className={styles['nav-link']} onClick={closeMobileMenu}>Blog</a>
                         </Link>
                     </li>
@@ -67,13 +67,13 @@ function Navbar() {
                         onMouseEnter={onMouseEnter}
                         onMouseLeave={onMouseLeave}
                     >
-                        <Link href="/gallery">
+                        <Link href="/gallery" legacyBehavior>
                             <a className={styles['nav-link']} onClick={closeMobileMenu}>Gallery <span className={styles.caret} ><FontAwesomeIcon icon={faCaretDown} /></span></a>
                         </Link>
                         {dropdown && <Dropdown/>}
                     </li>
                     <li className={styles['nav-item']}>
-                        <Link href="/contact">
+                        <Link href="/contact" legacyBehavior>
                             <a className={styles['nav-link']} onClick={closeMobileMenu}>Contact</a>
                         </Link>
                     </li>

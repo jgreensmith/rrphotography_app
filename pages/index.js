@@ -32,7 +32,7 @@ function Home() {
                     
                     <div className={styles['object-container']}>
                         <div className={styles['object-wrapper']}>
-                            <Link href="/landscape">
+                            <Link href="/landscape" legacyBehavior>
                                 <a className={styles.decoration}>
                                     <div className={styles['object-img-wrapper']}>
                                         <img className={styles['img-fit']} src="images/home/ls-circle.jpg" alt="Landscape"></img>
@@ -46,7 +46,7 @@ function Home() {
                             
                         </div>
                         <div className={styles['object-wrapper']}>
-                            <Link href="/wildlife">
+                            <Link href="/wildlife" legacyBehavior>
                                 <a className={styles.decoration}>
                                     <div className={styles['object-img-wrapper']}>
                                         <img className={styles['img-fit']} src="images/home/wl-circle.jpg" alt="Landscape"></img>
@@ -60,7 +60,7 @@ function Home() {
                             </Link>  
                         </div>
                         <div className={styles['object-wrapper']}>
-                            <Link href="/cyanotype">
+                            <Link href="/cyanotype" legacyBehavior>
                                 <a className={styles.decoration}>
                                     <div className={styles['object-img-wrapper']}>
                                         <img className={styles['img-fit']} src="images/home/c-circle.jpg" alt="Landscape"></img>
@@ -74,7 +74,7 @@ function Home() {
                             </Link>
                         </div>
                         <div className={styles['object-wrapper']}>
-                            <Link href="/black-white">
+                            <Link href="/black-white" legacyBehavior>
                                 <a className={styles.decoration}>
                                     <div className={styles['object-img-wrapper']}>
                                         <img className={styles['img-fit']} src="images/home/bw-circle.jpg" alt="Landscape"></img>

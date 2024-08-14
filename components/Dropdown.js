@@ -20,7 +20,7 @@ function Dropdown() {
             {MenuItems.map((item, index) => {
                 return(
                     <li className={styles.dropdownList} key={index}>
-                        <Link href={item.path}>
+                        <Link href={item.path} legacyBehavior>
                             <a className={styles.dropdownLink} onClick={() => setClick(false)} >
                                 {item.title}
                             </a>
