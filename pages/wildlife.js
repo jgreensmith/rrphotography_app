@@ -1,4 +1,3 @@
-// import { sanityClient, urlFor } from "../sanity"
 import { SRLWrapper } from 'simple-react-lightbox';
 import Head from 'next/head';
 

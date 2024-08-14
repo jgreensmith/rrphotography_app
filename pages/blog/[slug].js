@@ -1,4 +1,3 @@
-// import { sanityClient, urlFor } from "../../sanity";
 import BlockContent from '@sanity/block-content-to-react'; 
 
 import styles from '../../styles/Post.module.scss'
