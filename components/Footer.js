@@ -9,10 +9,10 @@ const Footer = () => {
             <div className={styles['footer-container']}>
                 <div className={styles['footer-object-wrapper']}>
                     <a href="https://www.instagram.com/rebeccareynolds935/" target="_blank" rel="noreferrer">
-                        <FontAwesomeIcon icon={['fab', 'instagram']} size="2x" className={styles['i-icon']}/>
+                        {/* <FontAwesomeIcon icon={['fab', 'instagram']} size="2x" className={styles['i-icon']}/> */}
                     </a>
                     <a href="https://www.etsy.com/uk/shop/HergestMoonlight" target="_blank" rel="noreferrer">
-                        <FontAwesomeIcon icon={['fab', 'etsy']} size="2x" className={styles['e-icon']}/>
+                        {/* <FontAwesomeIcon icon={['fab', 'etsy']} size="2x" className={styles['e-icon']}/> */}
                     </a> 
                 </div>
                 <div className={`${styles["footer-object-wrapper"]} ${styles["sm"]}`}>

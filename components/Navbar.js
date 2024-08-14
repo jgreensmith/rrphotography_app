@@ -34,7 +34,7 @@ function Navbar() {
     return (
         <>
         <nav className={styles['main-nav']}>
-            <Link href="/" >
+            <Link href="/" legacyBehavior>
                 <a className={styles['brand-wrapper']} onClick={closeMobileMenu}>
                     <div className={styles['brand-title']}>
                             <span className={styles['span-title']}>Rebecca Reynolds </span>

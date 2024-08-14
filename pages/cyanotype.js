@@ -44,23 +44,23 @@ const Cyanotype = () => {
     )
 }
 
-export const getServerSideProps = async () => {
-    const query = '*[ _type == "cyanotype"]'
-    const imageData = await sanityClient.fetch(query)
+// export const getServerSideProps = async () => {
+//     const query = '*[ _type == "cyanotype"]'
+//     const imageData = await sanityClient.fetch(query)
   
-    if (!imageData.length) {
-      return {
-        props: {
-          imageData: [],
-        },
-      }
-    } else {
-      return {
-        props: {
-          imageData,
-        },
-      }
-    }
-  }
+//     if (!imageData.length) {
+//       return {
+//         props: {
+//           imageData: [],
+//         },
+//       }
+//     } else {
+//       return {
+//         props: {
+//           imageData,
+//         },
+//       }
+//     }
+//   }
 
 export default Cyanotype;
